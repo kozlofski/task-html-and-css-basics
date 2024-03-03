@@ -1,0 +1,91 @@
+.section {
+    border: 6px solid green;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50px;
+    /* delete */
+}
+
+.container {
+    border: 6px solid blue;
+    min-width: 1150px;
+    /* to be deleted */
+    max-width: 1150px;
+}
+
+.element {
+    border: 6px solid orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+/* rename this top class */
+.top {
+    background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    color: white;
+}
+
+.menu__item {
+    width: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    color: white;
+    padding-top: 80px;
+}
+
+.description__header {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.description__text {
+    font-size: 20px;
+    margin-bottom: 34px;
+}
+
+.download__button {
+    color: white;
+    /* pick color */
+    background-color: rgb(72, 243, 72);
+    padding: 18px 55px;
+    border-radius: 15px;
+}
+
+.hero__image {
+    margin-top: 25px;
+    margin-right: 80px;
+    margin-bottom: 25px;
+    rotate: -6deg;
+    border: 20px solid white;
+    border-bottom: 82px solid white;
+    border-radius: 20px;
+}
