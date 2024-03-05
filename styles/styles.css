@@ -1,9 +1,21 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./../fonts/static/Montserrat-Regular.ttf) format('ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Montserrat', normal;
+}
+
 .section {
     border: 6px solid green;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: nowrap; */
     min-height: 50px;
     /* delete */
 }
@@ -13,6 +25,7 @@
     min-width: 1150px;
     /* to be deleted */
     max-width: 1150px;
+
 }
 
 .element {
@@ -31,12 +44,13 @@ a:visited {
 /* rename this top class */
 .top {
     background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+    padding-bottom: 112px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px; 
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -86,6 +100,67 @@ a:visited {
     margin-bottom: 25px;
     rotate: -6deg;
     border: 20px solid white;
+    background-color: white;
     border-bottom: 82px solid white;
     border-radius: 20px;
+}
+
+.features {
+    background-color: black;
+    color: white;
+}
+
+.features__header {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.features__presentation {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 26px;
+    padding-bottom: 130px;
+}
+
+.feature {
+    display: flex;
+    width: 33.3333%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.feature__icon {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.feature__description {
+    font-size: 16px;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    display: flex;
+    text-align: center;
+    /* justify-content: center;     */
+}
+
+.feature__paragraph {
+    /* font-size: 15px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
