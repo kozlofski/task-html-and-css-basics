@@ -1,27 +1,18 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url(./../fonts/static/Montserrat-Regular.ttf) format('ttf');
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
     font-family: 'Montserrat', normal;
 }
 
 .section {
-    border: 6px solid green;
+    /* border: 6px solid green; */
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* flex-wrap: nowrap; */
     min-height: 50px;
-    /* delete */
 }
 
 .container {
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
     min-width: 1150px;
     /* to be deleted */
     max-width: 1150px;
@@ -29,7 +20,7 @@ body {
 }
 
 .element {
-    border: 6px solid orange;
+    /* border: 6px solid orange; */
 }
 
 a {
@@ -168,12 +159,14 @@ a:visited {
 .logos {
     display: flex;
     justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .simple-and-beautiful {
     display: flex;
     max-width: 1400px;
-    
+
 }
 
 .imac {
@@ -209,8 +202,6 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
 
 .pricing-upper-header__text {
@@ -229,6 +220,7 @@ a:visited {
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    padding-bottom: 70px;
 }
 
 .pricing-option {
@@ -238,16 +230,18 @@ a:visited {
     flex-basis: 320px;
     box-shadow: 20px;
     padding-top: 60px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     padding-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    
-    
+    height: 340px;
+    border-radius: 8px;
 }
 
 .pricing-option:hover {
     box-shadow: 10px 10px (255, 0, 0, 0.5);
+    box-shadow: 10px 10px 30px #bbbbbb;
+    transition: 200ms;
 }
 
 .pricing-option__price {
@@ -266,6 +260,83 @@ a:visited {
     font-size: 17px;
 }
 
+.get-started-button {
+    font-size: 15px;
+    color: white;
+    background-color: #0ABCEB;
+    padding: 18px 44px;
+    position: absolute;
+    margin-top: 267px;
+    border-radius: 10px;
+}
 
+.pricing-option:hover > .get-started-button {
+    background-color: #08abd8;
+    transform: 200ms;
+}
 
+.team-header {
+    font-size: 32px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
 
+.team-presentation {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 170px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 26%;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.member-position {
+    margin-top: 38px;
+    font-size: 21px;
+}
+
+.member-name {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.member-description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    filter: brightness(10%) contrast(97%);
+    margin-top: 20px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    flex-direction: row;
+    background-color: #464646;
+    display: flex;
+    justify-content: center;
+    padding-top: 9px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 15px;
+    margin-right: 22px;
+}
